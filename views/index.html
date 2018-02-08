@@ -10,9 +10,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Welcome to Glitch!</title>
-    <meta name="description" content="A cool thing made with Glitch">
-    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <title>File Metadata Microservice</title>
+    <meta name="description" content="File Metadata Microservice">
+    <link id="favicon" rel="icon" href="https://cdn3.iconfinder.com/data/icons/brands-applications/512/File-512.png" type="image/x-icon">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,26 +21,36 @@
   <body>
     <header>
       <h1>
-        A Dream of the Future
+        File Metadata Microservice
       </h1>
+      <h3>Objective:</h3>
+      <ul>
+        <li>Build a full stack JavaScript app that is functionally similar to this: 
+      https://aryanj-file-size.herokuapp.com/ 
+      and deploy it to Glitch.</li>
+      </ul>
+      <h3>User Stories:</h3>
+      <ul>
+        <li>I can submit a FormData object that includes a file upload.</li>
+        <li>When I submit something, I will receive the file size in bytes within the JSON response.</li>
+      </ul>
     </header>
-
-    <main>
-      <p class="bold">Oh hi,</p>
-      <p>Tell me your hopes and dreams:</p>
-      <form>
-        <input type="text" maxlength="100" placeholder="Dreams!">
+    
+    <main id="middle">
+      <form method="post" enctype="multipart/form-data">
+        <h2>Choose a file to upload</h2>
+        <input type="file" id="file" name="file">
         <button type="submit">Submit</button>
       </form>
-      <section class="dreams">
-        <ul id="dreams">
-        </ul>
-      </section>
+      <div id="display">
+        The size of the uploaded file is shown here
+      </div>
     </main>
 
     <footer>
-      <a href="https://glitch.com">
-        Remix this in Glitch
+      This repository can be found 
+      <a href="https://github.com/Bao88/File-Metadata-Microservice" target="_blank">
+        here
       </a>
     </footer>
 
