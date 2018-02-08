@@ -26,7 +26,7 @@ body {
 #middle {
   position: absolute;
   top: 50%;
-  margin-top: -50px;
+  margin-top: -5vh;
 }
 
 #display{
@@ -61,7 +61,8 @@ form h2{
 }
 
 form:hover {
-  opacity: 0.8; 
+/*   opacity: 0.5;  */
+  background-color: grey;
 }
 
 input {
